@@ -115,6 +115,8 @@ if (isset($_GET['id'])) {
               foreach ($genre_codes as $genre_code) {
                 if ($genre_code === $book['genre_code']) {
                   echo "<option value='{$genre_code}' selected>{$genre_code}</option>";
+                } else {
+                  echo "<option value='{$genre_code}'>{$genre_code}</option>";
                 }
                
               }
